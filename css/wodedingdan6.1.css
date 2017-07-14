@@ -1,0 +1,70 @@
+@import url(reset.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  width: 100%;
+  height: 0.88rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container header span img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+  margin-left: 0.3rem;
+}
+.container header h2 {
+  font-size: 0.32rem;
+  color: #fff;
+  margin-left: 1.82rem;
+}
+.container section {
+  -webkit-box-flex: 1;
+}
+.container section .shop-nav {
+  width: 100%;
+  height: 0.81rem;
+  background: full;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  border: 1px solid #cdcccc;
+}
+.container section .shop-nav a {
+  display: block;
+  width: 1.16rem;
+  height: 0.7rem;
+  margin-left: 0.2rem;
+}
+.container section .shop-nav a span {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.26rem;
+  color: #333333;
+  text-align: center;
+}
+.container section .shop-nav .show {
+  margin-left: 1.16rem;
+}
+.container section .shop-nav .show2 {
+  margin-left: 1rem;
+}
+.container section .main {
+  background: red;
+}
+.container footer .di {
+  width: 100%;
+  height: 0.8rem;
+  background: #ff0000;
+}

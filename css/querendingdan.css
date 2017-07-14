@@ -1,0 +1,284 @@
+@import url(reset.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative;
+}
+.container header {
+  width: 100%;
+  height: 0.88rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container header span img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+  margin-left: 0.3rem;
+}
+.container header h2 {
+  font-size: 0.34rem;
+  color: #fff;
+  margin-left: 1.3rem;
+}
+.container section {
+  -webkit-box-flex: 1;
+  background: #f2f5f7;
+}
+.container section .banner {
+  width: 100%;
+  height: 1.35rem;
+  background: full;
+  border-top: 1px solid #e6e9eb;
+  border-bottom: 1px solid #e6e9eb;
+  background: #ffffff url(../img/chang.png) no-repeat bottom;
+  background-size: 100%;
+  margin-top: 0.15rem;
+}
+.container section .zi {
+  font-size: 0.26rem;
+  color: black;
+  display: block;
+  margin-top: 0.22rem;
+  margin-left: 0.23rem;
+}
+.container section .zi2 {
+  font-size: 0.22rem;
+  color: black;
+  display: block;
+  margin-left: 0.27rem;
+  background: url(../img/weizhi.png) no-repeat left center;
+  padding: 0 0.23rem;
+  background-size: 0.2rem;
+}
+.container section .zi2 img {
+  width: 0.16rem;
+  height: auto;
+  background: none;
+  margin-left: 0.27rem;
+}
+.container section .zi3 {
+  font-size: 0.22rem;
+  color: black;
+  display: block;
+  margin-left: 0.51rem;
+}
+.container section .banner2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.78rem;
+  background: #ffffff;
+  border-top: 1px solid #e6e9eb;
+  border-bottom: 1px solid #e6e9eb;
+  margin-top: 0.14rem;
+}
+.container section .a {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container section .zi4 {
+  font-size: 0.26rem;
+  color: black;
+  display: block;
+  margin-left: 0.21rem;
+}
+.container section .zi5 {
+  font-size: 0.24rem;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-left: 0.61rem;
+}
+.container section .zi5 img {
+  width: 0.16rem;
+  height: auto;
+  background: none;
+  margin-left: 0.1rem;
+}
+.container section .banner3 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.81rem;
+  background: #ffffff;
+  -webkit-box-align: center;
+  border-top: 1px solid #e6e9eb;
+  border-bottom: 1px solid #e6e9eb;
+  margin-top: 0.13rem;
+}
+.container section .banner3 img {
+  width: 0.06rem;
+  height: auto;
+  background: none;
+  margin-left: 0.2rem;
+}
+.container section .zi6 {
+  font-size: 0.24rem;
+  color: black;
+  display: block;
+  margin-left: 0.08rem;
+}
+.container section .banner4 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.16rem;
+  background: #ffffff;
+  -webkit-box-align: center;
+  border-bottom: 1px solid #e6e9eb;
+}
+.container section .banner4 img {
+  width: 0.88rem;
+  height: auto;
+  background: none;
+  margin-left: 0.2rem;
+}
+.container section .zi7 {
+  font-size: 0.22rem;
+  color: black;
+  display: block;
+  margin-left: 0.2rem;
+  line-height: 0.25rem;
+}
+.container section .zi8 {
+  font-size: 0.17rem;
+  display: block;
+  margin-left: 0.4rem;
+  color: #999999;
+}
+.container section .zi9 {
+  font-size: 0.17rem;
+  display: block;
+  margin-left: 0.1rem;
+  text-decoration: line-through;
+  color: #c8c8c8;
+}
+.container section .zi10 {
+  font-size: 0.17rem;
+  color: black;
+  display: block;
+  margin-left: 0.15rem;
+}
+.container section .banner5 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 0.8rem;
+  background: #ffffff;
+  -webkit-box-align: center;
+  border-bottom: 1px solid #e6e9eb;
+}
+.container section .banner5 a {
+  font-size: 0.24rem;
+  display: block;
+  margin-left: 0.2rem;
+  letter-spacing: 0.04rem;
+}
+.container section .banner5 p {
+  font-size: 0.24rem;
+  display: block;
+  margin-left: 0.31rem;
+  letter-spacing: 0.04rem;
+}
+.container section .banner5 i {
+  font-size: 0.24rem;
+  display: block;
+  letter-spacing: 0.04rem;
+  margin-left: 2.16rem;
+}
+.container section .banner5 i em {
+  font-size: 0.24rem;
+  color: #ff5a64;
+}
+.container footer {
+  width: 100%;
+  height: 0.88rem;
+  background: #454647;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container footer .shu {
+  -webkit-box-flex: 1;
+  color: #fff;
+  margin-left: 0.2rem;
+  font-size: 0.26rem;
+  margin-top: 0.31rem;
+}
+.container footer .status {
+  background: #ff8c50;
+  width: 2.3rem;
+  height: 0.88rem;
+  display: block;
+  color: #fff;
+  font-size: 0.3rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.zhezhao .content {
+  width: 5.08rem;
+  height: 2.94rem;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.54rem;
+  top: 50%;
+  margin-top: -1.47rem;
+}
+.zhezhao .p {
+  text-align: center;
+  display: block;
+  font-size: 0.26rem;
+  color: #333333;
+  margin-top: 0.68rem;
+}
+.zhezhao .a {
+  color: #4194f0;
+}
+.zhezhao .i {
+  display: block;
+  text-align: center;
+  font-size: 0.22rem;
+  margin-top: 0.21rem;
+  color: #666666;
+}
+.zhezhao .qx {
+  text-align: center;
+  margin-top: 0.37rem;
+  margin-left: 0.3rem;
+  width: 2.1rem;
+  height: 0.76rem;
+  border: 2px solid #4194f0;
+  color: #4194F0;
+  border-radius: 0.05rem;
+}
+.zhezhao .qd {
+  margin-top: 0.37rem;
+  margin-left: 0.3rem;
+  text-align: center;
+  width: 2.14rem;
+  height: 0.8rem;
+  color: #fff;
+  background: #4194F0;
+  border-radius: 0.05rem;
+  border: none;
+}

@@ -1,0 +1,177 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:horizontal){
+    display: -webkit-box;//将父元素设置为弹性盒布局
+    -webkit-box-orient: @ver;//设置子元素的排序方式
+}
+
+html,body,.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    .box(vertical);
+    header{
+        .full(100%,0.88rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .full(0.38rem,auto,none);
+                margin-left: 0.3rem;
+            }
+        }
+        h2{
+            font-size: 0.34rem;
+            color: #fff;
+            margin-left: 1.3rem;
+        }
+        .search{
+            margin-left: 1.83rem;
+            font-size: 0.34rem;
+        }
+    }
+    section{
+        .banner{
+            .full(100%,0.88rem,#f3f2f5);
+            .box; 
+            position: relative;           
+            span{
+                h3{
+                    width: 5.8rem;
+                    height: 0.6rem;
+                    background: #fff;
+                    border-radius: 0.1rem;
+                    margin: 0.15rem 0.3rem;                   
+                    a{                       
+                        background: url(../img/images/search-icon_01.png) no-repeat left center;
+                        background-size: 0.26rem;
+                        margin-left: 0.1rem;
+                        font-size: 0.2rem;
+                        color: #aaaaaa;
+                        padding: 0 0.5rem;
+                        line-height: 0.64rem;
+                    }
+                }
+                .search2{
+                    width: 4.7rem;
+                    .gai{
+                        margin-left: 0.2rem;
+                        padding: 0 0.4rem;
+                    }
+                }
+                .tu4{
+                    width: 0.84rem;
+                    height: 0.6rem;
+                    margin-top: 0.15rem;
+                    margin-left: 0.02rem;
+                    border-radius: 0.02rem;
+                    background: #eaeaea;
+                    border: 1px solid #d9d9d9;
+                }
+            }
+        }
+        .weizhaodao{
+            margin-top: 2.26rem; 
+            span{
+                img{
+                    .full(1.33rem,auto,none);
+                    margin-left: 2.54rem;
+                }
+            }
+            h3{
+                color: #999999;
+                font-size: 0.28rem;
+                text-align: center;
+            }
+        }
+        .banner2{
+            .full(100%,1.21rem,#fff);
+            span{
+                h2{
+                    line-height: 0.65rem;
+                    background: url(../img/images/search-icon_04.png) no-repeat 0.3rem center;
+                    background-size: 0.2rem;
+                    padding: 0 0.65rem;
+                    
+                }
+            }
+            p{
+                font-size: 0.26rem;
+                color: #4194f0;
+                margin-left: 0.6rem;
+            }
+        }
+        .banner3{
+            .full(5.84rem,0.46rem,#f3f2f5);
+            margin-left: 0.02rem;
+            p{
+                font-size: 0.3rem;
+                font-weight: bold;
+                margin-top: 0.12rem;
+                margin-left: 0.3rem;
+            }
+        }
+        .banner4{
+            .full(5.34rem,0.98rem,full);
+            margin-left: 0.3rem;
+            border-bottom: 1px solid #e6e9eb;
+            p{
+                font-size: 0.26rem;
+                color: #4194f0;
+                line-height: 0.86rem;
+            }
+        }
+        .dui{
+            a{
+                font-weight: bold;
+                color: #4194f0;
+                font-size: 0.4rem;
+            }
+        }
+        .banner5{
+            .full(5.34rem,0.98rem,full);
+            margin-left: 0.3rem;
+            border-bottom: 1px solid #e6e9eb;
+            p{
+                font-size: 0.26rem;
+                line-height: 0.86rem;
+            }
+        }
+    }
+    footer{
+        .aside{
+            .full(0.3rem,6.08rem,full);
+            margin-right: 0.12rem;
+            position: absolute;
+            right: 0;
+            top: 3.3rem;
+            p{
+                color: #4194f0;
+                font-size: 0.18rem;
+                line-height: 0.3rem;
+            }
+        }
+        .e{
+            position: absolute;
+            top: 5rem;
+            left: 2.8rem;
+            p{
+                width: 0.8rem;
+                height: 0.8rem;
+                background: #4194f0;
+                border-radius: 0.07rem;
+                text-align: center;
+                font-size: 0.36rem;
+                color: #fff;
+                line-height: 0.7rem;
+            }
+        }
+    }
+}

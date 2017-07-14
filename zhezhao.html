@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>商品详情2</title>
+    <link rel="stylesheet" type="text/css" href="css/xizihu.css"/>
+    <script type="text/javascript">
+    	
+   	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<span>
+				<img src="images/chengshi_03.jpg"/>
+			</span>
+			
+			<h2 class="search">杭州西子湖四季三星级商务全国连锁</h2>
+		</header>
+		
+		<section class="main">
+			<div class="shop-head">
+				<div class="headpic">
+					<img src="img/shop.png"/>
+					<img src="img/nofile.png" class="dayang"/>
+				</div>
+				<div class="headtxt">
+					<img src="img/tong.png"/><img src="img/maotou.png" class="mao1"/><img src="img/gold.png" class="mao1"/><br />
+					<p>商品 <span class="num">22</span> 种 | 起送 <span class="num">0</span>元</p>
+				</div>
+				<div class="star"></div>
+			</div>
+			<div class="shop-nav">
+				<a href="#" style="border-bottom: 3px solid #4194f0;"><span style="color: #4194f0;">商品</span></a>
+				<a href="#"><span>详情</span></a>
+				<a href="#"><span>评价</span></a>
+			</div>
+			<div class="shopbig">
+				<div class="shopl">
+					<ul>
+						<li><a href="#" style="color: #4194f0; background: #fff;">方便速食</a></li>
+						<li><a href="#">超值礼盒装饮料</a></li>
+						<li><a href="#">休闲零食</a></li>
+						<li><a href="#">饼干糕点</a></li>
+						<li><a href="#">糖果冲饮</a></li>
+						<li><a href="#">泡面火腿</a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<div class="shopr">
+					<div class="shopr-nav">
+								<a href="#" class="latiao">辣条</a>
+								<a href="#">薯片</a>
+								<a href="#">饮料</a>
+								<a href="#">啤酒</a>
+								<a href="#">西服</a>
+								<a href="#">辣条</a>
+								<a href="#">辣条</a>
+					</div>
+					<div class="shopr-one">
+						<b><img src="img/food.png" id="mypic1"/></b>
+						<a><img src="img/youhui.png"/></a>
+						<span>
+							<p class="xiang">香菇肥牛味牛肉20g/袋</p>
+							<p class="ku">库存: 20袋</p>
+							<p><img src="img/shuz.png"/></p>
+						</span>		
+						<div class="zhekou">
+							<img src="img/zhekou.png"/>
+						</div>
+						<div class="yuan gai1">
+							<img src="img/quan.png"/>
+						</div>
+					</div>
+					
+					<div class="shopr-two">
+						<b><img src="img/ls.png" id="mypic2"/></b>
+						<span>
+							<p class="xiang">喜之郎吸吸乳3/袋</p>
+							<p class="ku">库存: 20杯</p>
+							<p class="rmb">¥20</p>
+						</span>		
+						<div class="yuan gai1">
+							<img src="img/quan.png"/>
+						</div>
+					</div>
+					
+					<div class="shopr-two">
+						<b><img src="img/mian.png"/></b>
+						<span>
+							<p class="xiang">泡面无敌</p>
+							<p class="ku">库存: 0</p>
+							<p class="rmb">¥20</p>
+							<p class="kong"><img src="img/kong.png"/></p>
+						</span>		
+						<div class="yuan">
+							<img src="img/yuan.png"/>
+						</div>
+					</div>
+					
+					<div class="shopr-two">
+						<b><img src="img/guodong.png"/></b>
+						<span>
+							<p class="xiang">喜之郎果冻3/袋</p>
+							<p class="ku">库存: 5个</p>
+							<p class="rmb">¥20</p>
+						</span>		
+						<div class="yuan gai1">
+							<img src="img/quan.png"/>
+						</div>
+					</div>
+					
+					<div class="shopr-two">
+						<b><img src="img/fenda.png"/></b>
+						<span>
+							<p class="xiang">芬达2.5元</p>
+							<p class="ku">库存: 20杯</p>
+							<p class="rmb">¥20</p>
+						</span>		
+						<div class="yuan">
+							<img src="img/yuan.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<b class="car"><img src="img/shopcar.png"/></b>
+			<p class="shu">¥0</p>
+			<a class="status">¥0元起送</a>
+		</footer>
+	</div>
+	<div class="zhezhao" id="zhezhao">
+		<div class="fenda">
+			<div class="cha" id="cha"></div>
+			<div class="tu">
+				<img src="img/bigfenda.png"/>
+				<p><a>骄傲的少年骄傲的少年骄傲的少年骄傲的少年骄傲的少年</a></p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+		$('#mypic1').click(function(){
+			$('#zhezhao').css("display","block");
+		})
+		
+//		$('#mypic2').click(function(){
+//			$('#zhezhao').css("display","block");
+//		})
+
+		$('#cha').click(function(){
+			$('#zhezhao').css("display","none");
+		})
+		
+	</script>
+</body>
+</html>

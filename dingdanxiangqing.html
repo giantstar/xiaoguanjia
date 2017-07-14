@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/dingdanxiangqing.css"/>
+    <script type="text/javascript">
+    	
+   	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<span>
+				<img src="images/chengshi_03.jpg"/>
+			</span>
+			
+			<h2>订单详情</h2>
+		</header>
+		<section>
+			<!--<div class="banner3">
+				<img src="img/lanshu.png"/><p class="zi6">我一直都在流浪可我不曾不曾见过海洋原来放在你手上</p>
+			</div>
+			<div class="banner4">
+				<img src="img/mian.png"/><p class="zi7">康师傅&nbsp;&nbsp;&nbsp;&nbsp;红烧牛&nbsp;&nbsp;&nbsp;&nbsp; 肉面 &nbsp;&nbsp;20克<br />小包装</p><i class="zi8">×1</i><em class="zi9">×1</em><a class="zi10">¥0.5</a>
+			</div>
+			<div class="banner4">
+				<img src="img/mian.png"/><p class="zi7">康师傅&nbsp;&nbsp;&nbsp;&nbsp;红烧牛&nbsp;&nbsp;&nbsp;&nbsp; 肉面 &nbsp;&nbsp;&nbsp;20克<br />小包装</p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="zi8">×1</i><a class="zi10">¥0.5</a>
+			</div>
+			<div class="banner4">
+				<img src="img/mian.png"/><p class="zi7">康师傅&nbsp;&nbsp;&nbsp;&nbsp;红烧牛&nbsp;&nbsp;&nbsp;&nbsp; 肉面 &nbsp;&nbsp;&nbsp;20克<br />小包装</p>&nbsp;&nbsp;&nbsp;&nbsp;<i class="zi8">×1</i><a class="zi10">¥0.5</a>
+			</div>
+			<div class="banner5">
+					<a>原价¥20</a>
+					<p>优惠-¥10</p>
+					<i>待支付<em>¥7</em></i>
+				</div>-->
+		</section>
+		<footer>
+			<p class="shu">待支付¥7</p>
+			<a class="status">确认支付</a>
+		</footer>
+	</div>
+</body>
+</html>

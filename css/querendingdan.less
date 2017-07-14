@@ -1,0 +1,264 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:horizontal){
+    display: -webkit-box;//将父元素设置为弹性盒布局
+    -webkit-box-orient: @ver;//设置子元素的排序方式
+}
+
+html,body,.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    .box(vertical);
+    position: relative;
+    header{
+        .full(100%,0.88rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .full(0.38rem,auto,none);
+                margin-left: 0.3rem;
+            }
+        }
+        h2{
+            font-size: 0.34rem;
+            color: #fff;
+            margin-left: 1.3rem;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        background: #f2f5f7;
+        .banner{
+            .full(100%,1.35rem,full);
+            border-top: 1px solid #e6e9eb;
+            border-bottom: 1px solid #e6e9eb;
+            background: #fff url(../img/chang.png) no-repeat bottom;
+            background-size: 100%;
+            margin-top: 0.15rem;
+        }
+        .zi{
+            font-size: 0.26rem;
+            color: black;
+            display: block;
+            margin-top: 0.22rem;
+            margin-left: 0.23rem;
+        }
+        .zi2{
+            font-size: 0.22rem;
+            color: black;
+            display: block;
+            margin-left: 0.27rem;
+            background: url(../img/weizhi.png) no-repeat left center;
+            padding: 0 0.23rem;
+            background-size: 0.2rem;
+            img{
+                .full(0.16rem,auto,none);
+                margin-left: 0.27rem;
+            }
+        }
+        .zi3{
+            font-size: 0.22rem;
+            color: black;
+            display: block;
+            margin-left: 0.51rem;
+        }
+        .banner2{
+            .box;
+            .full(100%,0.78rem,#fff);
+            border-top: 1px solid #e6e9eb;
+            border-bottom: 1px solid #e6e9eb;
+            margin-top: 0.14rem;
+        }
+        .a{
+            .box;
+            -webkit-box-align: center;
+        }
+        .zi4{
+            font-size: 0.26rem;
+            color: black;
+            display: block;
+            margin-left: 0.21rem;
+        }
+        .zi5{
+            font-size: 0.24rem;
+            color: black;
+            display: block;
+            text-align: center;
+            margin-left: 0.61rem;
+            img{
+                 .full(0.16rem,auto,none);
+                margin-left: 0.1rem;
+            }
+        }
+        .banner3{
+            .box;
+            .full(100%,0.81rem,#fff);
+            -webkit-box-align: center;
+            border-top: 1px solid #e6e9eb;
+            border-bottom: 1px solid #e6e9eb;
+            margin-top: 0.13rem;
+            img{
+                .full(0.06rem,auto,none);
+                margin-left: 0.2rem;
+            }
+        }
+        .zi6{
+            font-size: 0.24rem;
+            color: black;
+            display: block;
+            margin-left: 0.08rem;
+        }
+        .banner4{
+            .box;
+            .full(100%,1.16rem,#fff);
+            -webkit-box-align: center;
+            border-bottom: 1px solid #e6e9eb;
+            img{
+                .full(0.88rem,auto,none);
+                margin-left: 0.2rem;
+            }
+        }
+        .zi7{
+            font-size: 0.22rem;
+            color: black;
+            display: block;
+            margin-left: 0.2rem;
+            line-height: 0.25rem;
+        }
+        .zi8{
+            font-size: 0.17rem;
+            display: block;
+            margin-left: 0.4rem;
+            color: #999999;
+        }
+        .zi9{
+            font-size: 0.17rem;
+            display: block;
+            margin-left: 0.1rem;
+            text-decoration: line-through;
+            color: #c8c8c8;
+        }
+        .zi10{
+            font-size: 0.17rem;
+            color: black;
+            display: block;
+            margin-left: 0.15rem;
+        }
+        .banner5{
+            .box;
+            .full(100%,0.8rem,#fff);
+            -webkit-box-align: center;
+            border-bottom: 1px solid #e6e9eb;
+            a{
+                font-size: 0.24rem;
+                display: block;
+                margin-left: 0.2rem;
+                letter-spacing: 0.04rem;
+            }
+            p{
+                font-size: 0.24rem;
+                display: block;
+                margin-left: 0.31rem;
+                letter-spacing: 0.04rem;
+            }
+            i{
+                font-size: 0.24rem;
+                display: block;
+                letter-spacing: 0.04rem;
+                margin-left: 2.16rem;
+                em{
+                    font-size: 0.24rem;
+                    color: #ff5a64;
+                }
+            }
+        }
+    }
+    footer{
+        .full(100%,0.88rem,#454647);
+        .box;
+         .shu{
+            -webkit-box-flex: 1;
+            color: #fff;
+            margin-left: 0.2rem;
+            font-size: 0.26rem;
+            margin-top: 0.31rem;
+        }
+        .status{
+            .full(2.3rem,0.88rem,#ff8c50);
+            width: 2.3rem;
+            height: 0.88rem;
+            display: block;
+            color: #fff;
+            font-size: 0.3rem;
+            text-align: center;
+            padding-top: 0.2rem;
+        }
+    }
+}
+
+.zhezhao{
+    .full(100%,100%,rgba(0,0,0, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+//  适用于弹性和布局
+//  .box;
+//  -webkit-box-align: center;
+//  -webkit-box-pack: center;
+    .content{
+        .full(5.08rem,2.94rem,#fff);
+        border-radius: 0.05rem;
+        position: absolute;
+        left: 50%;
+        margin-left: -5.08rem/2;
+        top: 50%;
+        margin-top: -2.94rem/2;
+    }
+    .p{
+        text-align: center;
+        display: block;
+        font-size: 0.26rem;
+        color: #333333;
+        margin-top: 0.68rem;
+    }
+    .a{
+        color: #4194f0;
+    }
+    .i{
+        display: block;
+        text-align: center;
+        font-size: 0.22rem;
+        margin-top: 0.21rem;
+        color: #666666;
+    }
+    .qx{
+        text-align: center;
+        margin-top: 0.37rem;
+        margin-left: 0.3rem;
+        width: 2.1rem;
+        height: 0.76rem;
+        border: 2px solid #4194f0;
+        color: #4194F0;
+        border-radius: 0.05rem;
+    }
+    .qd{
+        margin-top: 0.37rem;
+        margin-left: 0.3rem;
+        text-align: center;
+         width: 2.14rem;
+        height: 0.8rem;
+        color: #fff;
+        background: #4194F0;
+        border-radius: 0.05rem;
+        border: none;
+    }
+}

@@ -1,0 +1,36 @@
+@import url(reset.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:horizontal){
+    display: -webkit-box;//将父元素设置为弹性盒布局
+    -webkit-box-orient: @ver;//设置子元素的排序方式
+}
+
+html,body,.container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container{
+    .box(vertical);
+    header{
+        .full(100%,2rem,#4194f0);
+        .box;
+        -webkit-box-align: center;
+        span{
+            img{
+                .full(0.38rem,auto,none);
+                margin-left: 0.3rem;
+            }
+        }
+        h2{
+            font-size: 0.34rem;
+            color: #fff;
+            margin-left: 1.82rem;
+        }
+    }
+}

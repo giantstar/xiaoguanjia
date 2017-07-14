@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/wodedingdan6.1.css"/>
+    <script type="text/javascript">
+    	
+   	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<span>
+				<img src="images/chengshi_03.jpg"/>
+			</span>
+			<h2 class="search">我的订单</h2>
+		</header>
+		<section>
+			<div class="shop-nav">
+				<a href="#" style="border-bottom: 3px solid #4194f0;"><span style="color: #4194f0;">全部</span></a>
+				<a href="#" class="show"><span>进行中</span></a>
+				<a href="#" class="show2"><span>已完成</span></a>
+			</div>
+			<div class="main">
+				asdasdsa
+			</div>
+		</section>
+		<footer>
+			<div class="di"></div>
+		</footer>
+	</div>
+</body>
+</html>

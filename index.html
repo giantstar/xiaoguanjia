@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/xuanzechengshi.css"/>
+    <script type="text/javascript">
+    	
+   	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<span>
+				<img src="images/chengshi_03.jpg"/>
+			</span>
+			
+			<h2>请选择所在城市</h2>
+		</header>
+		<section>
+			<div class="banner">
+				<span>
+					<h3><a style="">搜索学校</a></h3>
+				</span>
+			</div>
+			<div class="banner2">
+				<span>
+					<h2>当前定位城市</h2>
+				</span>
+					<p>无法获取当前位置</p>
+			</div>
+			<div class="banner3">
+				<p>E</p>
+			</div>
+			<div class="banner4">
+				<p>鄂尔多斯</p>
+			</div>
+			<div class="banner5">
+				<p>峨眉山</p>
+			</div>
+			<div class="banner5">
+				<p>恩施</p>
+			</div>
+			<div class="banner5" style="border: none;">
+				<p>鄂州</p>
+			</div>	
+			<div class="banner3">
+				<p>F</p>
+			</div>
+			<div class="banner5">
+				<p>佛山</p>
+			</div>
+			<div class="banner5">
+				<p>抚顺</p>
+			</div>
+			<div class="banner5">
+				<p>阜阳</p>
+			</div>
+		</section>
+		<footer>
+			<div class="aside">
+				<p>A</p>
+				<p>B</p>
+				<p>C</p>
+				<p>D</p>
+				<p>E</p>
+				<p>F</p>
+				<p>G</p>
+				<p>H</p>
+				<p>J</p>
+				<p>K</p>
+				<p>L</p>
+				<p>M</p>
+				<p>N</p>
+				<p>P</p>
+				<p>R</p>
+				<p>S</p>
+				<p>T</p>
+				<p>W</p>
+				<p>X</p>
+				<p>Y</p>
+				<p>Z</p>
+			</div>
+			<div class="e">
+				<p>E</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

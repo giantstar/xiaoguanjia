@@ -1,0 +1,533 @@
+@import url(reset.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  position: relative;
+}
+.container .header {
+  width: 100%;
+  height: 0.82rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.container .header span img {
+  width: 0.38rem;
+  height: auto;
+  background: none;
+  margin-left: 0.3rem;
+  margin-top: 0.1rem;
+}
+.container .header h2 {
+  font-size: 0.28rem;
+  color: #fff;
+  margin-left: 0.43rem;
+}
+.container .main {
+  -webkit-box-flex: 1;
+}
+.container .shop-head {
+  width: 100%;
+  height: 1.26rem;
+  background: #4194f0;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .shop-head .headpic {
+  position: relative;
+  width: 1.06rem;
+  height: 1.06rem;
+  margin-right: 0.2rem;
+  margin-left: 0.3rem;
+}
+.container .shop-head .headpic img {
+  width: 1.06rem;
+  height: 1.06rem;
+}
+.container .shop-head .dayang {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .shop-head .star {
+  width: 0.35rem;
+  height: 0.32rem;
+  background: url(../img/xing.png);
+  background-size: 0.35rem auto;
+  margin-right: 0.2rem;
+}
+.container .shop-head .headtxt {
+  -webkit-box-flex: 1;
+}
+.container .shop-head .headtxt img {
+  width: 0.58rem;
+  height: 0.3rem;
+  margin-top: 0.12rem;
+}
+.container .shop-head .headtxt .mao1 {
+  margin-left: 0.16rem;
+}
+.container .shop-head .headtxt p {
+  margin-top: 0.12rem;
+  font-size: 0.22rem;
+  color: #fff;
+}
+.container .shop-nav {
+  width: 100%;
+  height: 0.67rem;
+  background: full;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border: 1px solid #cdcccc;
+}
+.container .shop-nav a {
+  display: block;
+  width: 2.15rem;
+  height: 0.64rem;
+}
+.container .shop-nav a span {
+  display: block;
+  margin-top: 0.18rem;
+  font-size: 0.26rem;
+  color: #333333;
+  text-align: center;
+}
+.container .shopbig {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.container .shopbig .shopl {
+  width: 1.36rem;
+  height: 9rem;
+  background: #f5f5f5;
+}
+.container .shopbig .shopl ul {
+  border-right: 1px solid #eeeeee;
+}
+.container .shopbig .shopl ul li a {
+  display: block;
+  font-size: 0.24rem;
+  text-align: center;
+  padding: 0.43rem 0.16rem;
+  border-bottom: 1px solid #eaeaea;
+  color: #666666;
+  line-height: 0.26rem;
+}
+.container .shopbig .shopr {
+  width: auto;
+  height: 9rem;
+  background: full;
+  -webkit-box-flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.container .shopbig .shopr .shopr-nav {
+  width: auto;
+  height: 0.76rem;
+  background: #f5f5f5;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-left: 9px solid #d8d8d8;
+  -webkit-box-align: center;
+  border-bottom: 1px solid #eeeeee;
+}
+.container .shopbig .shopr .shopr-nav a {
+  display: block;
+  width: 0.8rem;
+  height: 0.44rem;
+  background: #ffffff;
+  text-align: center;
+  border: 1px solid #999999;
+  font-size: 0.22rem;
+  border-radius: 0.22rem;
+  margin-left: 0.24rem;
+  line-height: 0.44rem;
+}
+.container .shopbig .shopr .shopr-nav .latiao {
+  background: #4194f0;
+  color: #fff;
+  border: none;
+}
+.container .shopbig .shopr .shopr-one {
+  width: 4.66rem;
+  height: 1.78rem;
+  background: full;
+  margin-left: 0.2rem;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+  margin-right: 0.17rem;
+}
+.container .shopbig .shopr .shopr-one b {
+  float: left;
+}
+.container .shopbig .shopr .shopr-one b img {
+  width: 1.06rem;
+  height: auto;
+  background: none;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+}
+.container .shopbig .shopr .shopr-one a {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -0.2rem;
+}
+.container .shopbig .shopr .shopr-one a img {
+  width: 0.68rem;
+  height: auto;
+  background: none;
+}
+.container .shopbig .shopr .shopr-one span {
+  float: left;
+  margin-left: 0.21rem;
+}
+.container .shopbig .shopr .shopr-one span .xiang {
+  font-size: 0.26rem;
+  color: #333333;
+  margin-top: 0.13rem;
+}
+.container .shopbig .shopr .shopr-one span .ku {
+  font-size: 0.21rem;
+  color: #989898;
+  margin-top: 0.08rem;
+}
+.container .shopbig .shopr .shopr-one span p img {
+  width: 1.4rem;
+  height: auto;
+  background: none;
+  margin-top: 0.12rem;
+}
+.container .shopbig .shopr .shopr-one .zhekou {
+  position: absolute;
+  bottom: 0;
+  left: 0.2rem;
+}
+.container .shopbig .shopr .shopr-one .zhekou img {
+  width: 2.8rem;
+  height: auto;
+  background: none;
+}
+.container .shopbig .shopr .shopr-one .yuan {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.03rem;
+}
+.container .shopbig .shopr .shopr-one .yuan img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+}
+.container .shopbig .shopr .shopr-one .gai1 {
+  background: #4194f0;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+}
+.container .shopbig .shopr .shopr-one .gai1 img {
+  width: 0.26rem;
+  height: auto;
+  background: none;
+  padding: 0.08rem 0.08rem;
+}
+.container .shopbig .shopr .shopr-two {
+  width: 4.66rem;
+  height: 1.46rem;
+  background: full;
+  margin-left: 0.2rem;
+  border-bottom: 1px solid #eeeeee;
+  position: relative;
+}
+.container .shopbig .shopr .shopr-two b {
+  float: left;
+}
+.container .shopbig .shopr .shopr-two b img {
+  width: 1.06rem;
+  height: auto;
+  background: none;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+}
+.container .shopbig .shopr .shopr-two a {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: -0.2rem;
+}
+.container .shopbig .shopr .shopr-two a img {
+  width: 0.68rem;
+  height: auto;
+  background: none;
+}
+.container .shopbig .shopr .shopr-two span {
+  float: left;
+  margin-left: 0.21rem;
+}
+.container .shopbig .shopr .shopr-two span .xiang {
+  font-size: 0.26rem;
+  color: #333333;
+  margin-top: 0.13rem;
+  position: relative;
+}
+.container .shopbig .shopr .shopr-two span .ku {
+  font-size: 0.21rem;
+  color: #989898;
+  margin-top: 0.08rem;
+}
+.container .shopbig .shopr .shopr-two span p img {
+  width: 1.4rem;
+  height: auto;
+  background: none;
+  margin-top: 0.12rem;
+}
+.container .shopbig .shopr .shopr-two .zhekou {
+  position: absolute;
+  bottom: 0;
+  left: 0.2rem;
+}
+.container .shopbig .shopr .shopr-two .zhekou img {
+  width: 2.8rem;
+  height: auto;
+  background: none;
+}
+.container .shopbig .shopr .shopr-two .yuan {
+  position: absolute;
+  bottom: 0.08rem;
+  right: 0.03rem;
+}
+.container .shopbig .shopr .shopr-two .yuan img {
+  width: 0.4rem;
+  height: auto;
+  background: none;
+}
+.container .shopbig .shopr .shopr-two .gai1 {
+  background: #4194f0;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 0.2rem;
+}
+.container .shopbig .shopr .shopr-two .gai1 img {
+  width: 0.26rem;
+  height: auto;
+  background: none;
+  padding: 0.08rem 0.08rem;
+}
+.container .shopbig .shopr .shopr-two .kong {
+  position: absolute;
+  top: 0.18rem;
+  left: 0.3rem;
+}
+.container .shopbig .shopr .shopr-two .kong img {
+  width: 0.88rem;
+}
+.container .shopbig .shopr .shopr-two .rmb {
+  color: #ff5a64;
+  font-size: 0.3rem;
+}
+.container footer {
+  width: 100%;
+  height: 0.88rem;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  z-index: 50;
+  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.container footer .car {
+  position: absolute;
+  top: -0.28rem;
+  left: 0.19rem;
+}
+.container footer .car img {
+  width: 0.8rem;
+  height: auto;
+  background: none;
+  border-radius: 50%;
+  border: 0.1rem solid #4d4d4d;
+}
+.container footer .num {
+  position: absolute;
+  top: -0.35rem;
+  left: 0.8rem;
+}
+.container footer .num img {
+  width: 0.6rem;
+  height: auto;
+  background: none;
+}
+.container footer .shu {
+  -webkit-box-flex: 1;
+  color: #fff;
+  margin-left: 1.44rem;
+  font-size: 0.26rem;
+  margin-top: 0.2rem;
+}
+.container footer .status {
+  background: #ff8c50;
+  width: 2.3rem;
+  height: 0.88rem;
+  display: block;
+  color: #fff;
+  font-size: 0.3rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+.zhezhao .fenda {
+  width: 4.65rem;
+  height: 6.05rem;
+  background: #ffffff;
+  border-radius: 0.1rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -2.325rem;
+  top: 50%;
+  margin-top: -3.025rem;
+}
+.zhezhao .cha {
+  width: 0.54rem;
+  height: 0.54rem;
+  background: full;
+  background: #f5f5f5 url(../img/cha.png) no-repeat center center;
+  border-radius: 0.27rem;
+  background-size: 0.24rem ;
+  position: absolute;
+  top: 0.1rem;
+  right: 0.11rem;
+}
+.zhezhao .tu img {
+  width: 4.19rem;
+  height: auto;
+  background: none;
+  margin-left: 0.2rem;
+}
+.zhezhao .tu p {
+  font-size: 0.22rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid #eeeeee;
+}
+.zhezhao .tu p a {
+  display: block;
+  margin-left: 0.25rem;
+  line-height: 0.38rem;
+  width: 4.18rem;
+  height: 0.65rem;
+}
+.zhezhao2 {
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.shop-menu {
+  width: 100%;
+  height: 41.92982456%;
+  background: #ffffff;
+  z-index: 40;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.shop-hea {
+  width: 100%;
+  height: 0.69rem;
+  background: #eeeeee;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+}
+.shop-hea .one {
+  -webkit-box-flex: 1;
+  display: block;
+  margin-left: 0.21rem;
+}
+.shop-hea a {
+  font-size: 0.23rem;
+  color: #333333;
+  margin-right: 0.2rem;
+}
+.shop-cont {
+  width: 6.03rem;
+  height: 1.36rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  margin-left: 0.21rem;
+  border-bottom: 1px #ededed solid;
+}
+.check {
+  width: 0.38rem;
+  height: 0.38rem;
+  background: full;
+  display: block;
+  margin-left: 0.21rem;
+}
+.check input[type='checkbox'] {
+  display: none;
+}
+.check input[type='checkbox'] + label {
+  width: 0.38rem;
+  height: 0.38rem;
+  background: url(../img/checked-mark.png) no-repeat bottom;
+  background-size: 0.38rem auto;
+  display: block;
+}
+.check input[type='checkbox']:checked + label {
+  background-position: 0 0;
+}
+.pic5 img {
+  width: 0.88rem;
+  height: auto;
+  background: none;
+  margin-left: 0.24rem;
+}
+.zi {
+  font-size: 0.26rem;
+  color: #333333;
+  display: block;
+  margin-left: 0.25rem;
+}
+.zi2 {
+  font-size: 0.22rem;
+  color: #ff5a64;
+  display: block;
+  margin-left: 0.32rem;
+}
+.zi3 {
+  margin-left: 0.28rem;
+  display: block;
+}
+.jian1 {
+  width: 0.4rem;
+  margin-right: 0.12rem;
+}
+.jia {
+  width: 0.4rem;
+  margin-left: 0.13rem;
+}
+.number1 {
+  font-size: 0.17rem;
+  color: #333333;
+}

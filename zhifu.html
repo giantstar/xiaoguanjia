@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/zhifu.css"/>
+    <script type="text/javascript">
+    	
+   	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<span>
+				<img src="images/chengshi_03.jpg"/>
+			</span>
+			
+			<h2>选择支付方式</h2>
+		</header>
+		<section>
+			<div class="banner">
+				<span>
+					<a>订单金额</a>
+				</span>
+				<h1>7</h1>
+			</div>
+			<div class="banner2">
+				<span>
+					<a>选择支付方式</a>
+				</span>
+			</div>
+			<div class="pay">
+				<span class="check">
+					<input type="radio" name="payway" id="money" checked="checked" /><label for="money"></label>
+				</span>
+				<p class="word bg-money">钱包</p>
+				<span class="yue">余额120.25元</span>
+			</div>
+			<div class="pay2">
+				<span class="check">
+					<input type="radio" name="payway" id="wx" /><label for="wx"></label>
+				</span>
+				<p class="word bg-money">微信</p>
+			</div>
+			<div class="pay3">
+				<span class="check">
+					<input type="radio" name="payway" id="zfb" /><label for="zfb"></label>
+				</span>
+				<p class="word bg-money">支付宝</p>
+			</div>
+			<div class="kuai">
+				
+			</div>
+		</section>
+		<footer>
+			<div class="banner7">
+				<span>
+					<h3>确定支付</h3>
+				</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

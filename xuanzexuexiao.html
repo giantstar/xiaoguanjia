@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/xuanzechengshi.css"/>
+    <script type="text/javascript">
+    	
+   	(function (doc, win) {
+	var docEl = doc.documentElement,
+		resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+		recalc = function () {
+
+			var clientWidth = docEl.clientWidth;
+			if (!clientWidth) return;
+			if (clientWidth >= 750) {
+				docEl.style.fontSize = '100px';
+			} else {
+				docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+			}
+		};
+
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	/*DOMContentLoaded�ĵ�������ɲ���ͼƬ��Դ onload��ͼƬ��Դ*/
+})(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<span>
+				<img src="images/chengshi_03.jpg"/>
+			</span>
+			
+			<h2>请选择所在学校</h2>
+		</header>
+		<section>
+			<div class="banner">
+				<span>
+					<h3><a style="">搜索学校</a></h3>
+				</span>
+			</div>
+			<div class="banner4 dui">
+				<p>鄂尔多斯大学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a>√</a></p>
+			</div>
+			<div class="banner5">
+				<p>峨眉山大学</p>
+			</div>
+			<div class="banner5">
+				<p>恩施大学</p>
+			</div>
+			<div class="banner5">
+				<p>鄂州大学</p>
+			</div>	
+			<div class="banner5">
+				<p>抚顺大学</p>
+			</div>
+			<div class="banner5">
+				<p>阜阳大学</p>
+			</div>
+			<div class="banner5" style="border: none;">
+				<p>鞍山大学</p>
+			</div>
+		</section>
+		<footer>
+			
+		</footer>
+	</div>
+</body>
+</html>
